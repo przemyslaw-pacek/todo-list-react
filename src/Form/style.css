@@ -1,0 +1,44 @@
+.addTask {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    margin: 2px 0 10px;
+}
+
+@media (max-width: 767px) {
+    .addTask {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.addTask__header {
+    background: white;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px 0 2px;
+}
+
+.addTask__item {
+    border: 2px solid #eee;
+    background: white;
+    padding: 10px;
+}
+
+.addTask__item--button {
+    color: white;
+    border: none;
+    background: teal;
+    transition: 0.2s linear;
+}
+
+.addTask__item--button:hover {
+    background: rgb(0, 148, 148);
+    transform: scale(1.1);
+}
+
+.addTask__item--button:active {
+    background: rgb(0, 168, 168);
+}
