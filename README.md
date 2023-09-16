@@ -1,7 +1,22 @@
 # Task list
 
-Description:\
+![image](public/animation.gif)
+
+
+# Description:
+
 The "Lista zadań" program is a simply app to allows you to do list.
+
+If you want to use it, click [here](https://doncochino.github.io/todos-list-react/).
+
+## Technologies:
+- HTML
+- CSS
+- BEM
+- JavaScript
+- MediaQueries
+- Immutability
+- React
 
 How to use:
 
