@@ -21,7 +21,7 @@ const List = ({ tasks, hideDone, deleteTask, toggleTaskDone }) => (
         <button
           className="list__button list__button--deleted"
           onClick={() => deleteTask(task.id)}
-          >
+        >
           🗑
         </button>
       </li>
