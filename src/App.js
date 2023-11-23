@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Form from "./Form";
 import List from "./List";
 import Buttons from "./Buttons";
@@ -7,13 +7,15 @@ import Header from "./Header";
 import Container from "./Container";
 
 function App() {
- 
+
   const [hideDone, setHideDone] = useState(false);
   const [tasks, setTasks] = useState(
     JSON.parse(localStorage.getItem("tasks"))
-    );
+  );
 
-  localStorage.setItem("tasks", JSON.stringify(tasks));
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
@@ -24,8 +26,8 @@ function App() {
   };
 
   const toggleTaskDone = (id) => {
-    setTasks(tasks => tasks.map(task => 
-      task.id === id ? {...task, done: !task.done} : task
+    setTasks(tasks => tasks.map(task =>
+      task.id === id ? { ...task, done: !task.done } : task
     ))
   };
 
@@ -38,13 +40,13 @@ function App() {
 
   const addNewTask = (content) => {
     setTasks(tasks => [
-          ...tasks,
-          {
-            content: content,
-            done: false,
-            id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
-          }
-        ]);
+      ...tasks,
+      {
+        content: content,
+        done: false,
+        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
+      }
+    ]);
   };
 
   return (
