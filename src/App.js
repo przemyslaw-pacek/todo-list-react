@@ -16,7 +16,7 @@ function App() {
       setTasks(({ tasks }) => tasks = JSON.parse(localStorage.getItem("tasks")));
 
       localStorage.setItem("tasks", JSON.stringify(tasks));
-    }, 0);
+    }, 10);
     
     return () => {
       clearTimeout(myTasks);
