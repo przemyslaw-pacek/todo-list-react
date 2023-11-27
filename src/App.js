@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       localStorage.setItem("tasks", JSON.stringify(tasks));
-    });
+    }, 0);
   }, [tasks]);
 
   const toggleHideDone = () => {
