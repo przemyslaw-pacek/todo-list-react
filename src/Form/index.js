@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { FormField, Input, Button } from "./styled.js";
 
 const Form = ({ addNewTask }) => {
@@ -16,15 +16,21 @@ const Form = ({ addNewTask }) => {
     setNewTaskContent("");
   };
 
+  const inputRef = useRef(null);
+
+  const focusInput = () => {
+    inputRef.current.focus();
+  };
+
   return (
     <FormField onSubmit={onFormSubmit}>
       <Input
         value={newTaskContent}
         placeholder="Co jest do zrobienia?"
-        autoFocus
         onChange={({ target }) => setNewTaskContent(target.value)}
+        ref={inputRef}
       />
-      <Button>Dodaj zadanie</Button>
+      <Button onClick={focusInput}>Dodaj zadanie</Button>
     </FormField>
   );
 };
