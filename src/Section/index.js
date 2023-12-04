@@ -1,11 +1,11 @@
-import './style.css';
+import { Header } from "./styled.js";
 
 const Section = ({ title, body, extraHeaderContent }) => (
     <section>
-        <header className="section__header">
+        <Header>
             <h2>{title}</h2>
             {extraHeaderContent}
-        </header>
+        </Header>
         {body}
     </section>
 );

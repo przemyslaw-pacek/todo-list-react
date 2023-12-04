@@ -1,14 +1,14 @@
-.section__header {
+import styled from "styled-components";
+
+export const Header = styled.header`
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
     background: white;
     font-size: 13.3px;
     padding: 3.2px 20px;
-}
 
-@media (max-width: 767px) {
-    .section__header {
+    @media(max-width: 767px) {
         grid-template-columns: auto;
     }
-}
+`;
