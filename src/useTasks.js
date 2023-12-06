@@ -35,5 +35,5 @@ export const useTasks = () => {
       ]);
     };
 
-    return [tasks, deleteTask, toggleTaskDone, setAllDone, addNewTask]
+    return {tasks, deleteTask, toggleTaskDone, setAllDone, addNewTask}
 };
