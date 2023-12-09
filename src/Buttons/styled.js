@@ -2,23 +2,23 @@ import styled from "styled-components";
 
 export const Button = styled.button`
     font-size: 16px;
-    color: teal;
-    background: white;
+    color: ${({ theme }) => theme.color.teal};
+    background: ${({ theme }) => theme.color.white};
     border: none;
     transition: 0.2s;
     cursor: pointer;
 
-    &:hover {
-        color: rgb(0, 168, 168);
-    }
-
-    &:disabled {
-        color: #ccc;
-        cursor: not-allowed;
-    }
-
     @media(max-width: 767px) {
         margin: 15px auto;
         display: grid;
-}
+    }
+
+    &:hover {
+        color: ${({ theme }) => theme.color.hoverTeal};
+    }
+
+    &:disabled {
+        color: ${({ theme }) => theme.color.grey};
+        cursor: not-allowed;
+    }
 `;

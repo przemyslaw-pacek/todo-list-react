@@ -4,7 +4,7 @@ export const FormField = styled.form`
     display: grid;
     grid-template-columns: 5fr 1fr;
     gap: 20px;
-    background: white;
+    background: ${({ theme }) => theme.color.white};
     padding: 20px;
     margin: 2.6px 0 10px;
 
@@ -16,23 +16,23 @@ export const FormField = styled.form`
 
 export const Input = styled.input`
     border: 2px solid #eee;
-    background: white;
+    background: ${({ theme }) => theme.color.white};
     padding: 10px;
 `;
 
 export const Button = styled.button`
-    color: white;
+    color: ${({ theme }) => theme.color.white};
     border: none;
-    background: teal;
+    background: ${({ theme }) => theme.color.teal};
     transition: 0.2s linear;
     cursor: pointer;
 
     &:hover {
-        background: rgb(0, 148, 148);
+        filter: brightness(120%);
         transform: scale(1.1);
     }
 
     &:active {
-        background: rgb(0, 168, 168);
+        filter: brightness(140%);
     }
 `;

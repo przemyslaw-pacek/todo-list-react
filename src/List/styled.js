@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Tasks = styled.ul`
-    background: white;
+    background: ${({ theme }) => theme.color.white};
     min-height: 60px;
     padding: 10px;
     margin: 2.3px 0 20px;
@@ -29,8 +29,8 @@ export const Content = styled.span`
 `;
 
 export const Button = styled.button`
-    color: white;
-    background: green;
+    color: ${({ theme }) => theme.color.white};
+    background: ${({ theme }) => theme.color.green};
     border: none;
     width: 30px;
     height: 30px;
@@ -38,23 +38,23 @@ export const Button = styled.button`
     cursor: pointer;
 
     &:hover {
-        background: rgb(0, 148, 0);
+        background: ${({ theme }) => theme.color.hoverGreen};
     }
 
     &:active {
-        background: rgb(0, 168, 0);
+        background: ${({ theme }) => theme.color.activeGreen};
     }
 
     ${({ deleted }) => deleted && css`
         justify-self: end;
-        background: red;
+        background: ${({ theme }) => theme.color.red};
 
         &:hover {
-            background: rgb(255, 60, 60);
+            background: ${({ theme }) => theme.color.hoverRed};
         }
 
         &:active {
-            background: rgb(255, 120, 120);
+            background: ${({ theme }) => theme.color.activeRed};
         }
     `}
 `;
