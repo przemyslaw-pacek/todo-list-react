@@ -30,31 +30,25 @@ export const Content = styled.span`
 
 export const Button = styled.button`
     color: ${({ theme }) => theme.color.white};
-    background: ${({ theme }) => theme.color.green};
     border: none;
     width: 30px;
     height: 30px;
-    transition: 0.2s;
+    transition: 0.3s;
     cursor: pointer;
 
+    ${({ toggleDone }) => toggleDone && css`
+        background: ${({ theme }) => theme.color.green};
+    `}
+
+    ${({ deleted }) => deleted && css`
+        background: ${({ theme }) => theme.color.red};
+    `}
+
     &:hover {
-        background: ${({ theme }) => theme.color.hoverGreen};
+        filter: brightness(120%);
     }
 
     &:active {
-        background: ${({ theme }) => theme.color.activeGreen};
+        filter: brightness(140%);
     }
-
-    ${({ deleted }) => deleted && css`
-        justify-self: end;
-        background: ${({ theme }) => theme.color.red};
-
-        &:hover {
-            background: ${({ theme }) => theme.color.hoverRed};
-        }
-
-        &:active {
-            background: ${({ theme }) => theme.color.activeRed};
-        }
-    `}
 `;
