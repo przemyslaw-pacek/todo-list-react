@@ -8,7 +8,7 @@ export const Button = styled.button`
     transition: 0.2s;
     cursor: pointer;
 
-    @media(max-width: 767px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         margin: 15px auto;
         display: grid;
     }

@@ -8,7 +8,7 @@ export const FormField = styled.form`
     padding: 20px;
     margin: 2.6px 0 10px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileWidth}px) {
         grid-template-columns: auto;
         grid-template-rows: 1fr 1fr;
     }

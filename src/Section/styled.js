@@ -8,7 +8,7 @@ export const Header = styled.header`
     font-size: 13.3px;
     padding: 3.2px 20px;
 
-    @media(max-width: 767px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileWidth}px) {
         grid-template-columns: auto;
     }
 `;

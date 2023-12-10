@@ -10,5 +10,9 @@ export const theme = {
         red: "#FF0000",
         hoverRed: "#FF3C3C",
         activeRed: "#FF7878",
-    }
+    },
+
+    breakpoint: {
+        mobileWidth: 767,
+    },
 }
