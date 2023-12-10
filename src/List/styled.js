@@ -15,7 +15,7 @@ export const Item = styled.li`
     padding: 10px;
     margin: 25px 10px 10px;
     list-style-type: none;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid ${({ theme }) => theme.color.lightGrey};
 
     ${({ hidden }) => hidden && css`
         display: none;

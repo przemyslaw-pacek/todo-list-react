@@ -15,7 +15,7 @@ export const FormField = styled.form`
 `;
 
 export const Input = styled.input`
-    border: 2px solid #eee;
+    border: 2px solid ${({ theme }) => theme.color.lightGrey};
     background: ${({ theme }) => theme.color.white};
     padding: 10px;
 `;
