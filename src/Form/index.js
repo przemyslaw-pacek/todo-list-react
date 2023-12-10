@@ -12,13 +12,9 @@ const Form = ({ addNewTask }) => {
     
     if (trimedNewTaskContent) {
       addNewTask(trimedNewTaskContent);
+      setNewTaskContent("");
+      inputRef.current.focus();
     };
-    
-    setNewTaskContent("");
-  };
-
-  const focusInput = () => {
-    inputRef.current.focus();
   };
 
   return (
@@ -29,7 +25,7 @@ const Form = ({ addNewTask }) => {
         onChange={({ target }) => setNewTaskContent(target.value)}
         ref={inputRef}
       />
-      <Button onClick={focusInput}>Dodaj zadanie</Button>
+      <Button>Dodaj zadanie</Button>
     </FormField>
   );
 };
