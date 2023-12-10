@@ -16,11 +16,14 @@ If you want to use it, click [here](https://doncochino.github.io/todos-list-reac
 ## Technologies:
 - HTML
 - CSS
-- BEM
 - JavaScript
+- BEM
 - MediaQueries
+- Normalize
 - Immutability
 - React
+- Styled-components
+- Custom hooks
 
 How to use:
 
