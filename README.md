@@ -20,10 +20,10 @@ If you want to use it, click [here](https://doncochino.github.io/todos-list-reac
 - BEM
 - MediaQueries
 - Normalize
-- Immutability
 - React
 - Styled-components
 - Custom hooks
+- Redux
 
 How to use:
 
