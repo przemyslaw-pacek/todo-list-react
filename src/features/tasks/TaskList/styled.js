@@ -40,7 +40,7 @@ export const Button = styled.button`
         background: ${({ theme }) => theme.color.green};
     `}
 
-    ${({ deleted }) => deleted && css`
+    ${({ $deleted }) => $deleted && css`
         background: ${({ theme }) => theme.color.red};
     `}
 
