@@ -3,10 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const tasksSlice = createSlice({
     name: 'tasks',
     initialState: {
-        tasks: [
-            { content: "Przejść na Reduxa", done: true, id: 0 },
-            { content: "Ukończyć kurs", done: false, id: 1 },
-        ],
+        tasks: [],
         hideDone: false,
     },
     reducers: {
@@ -27,6 +24,10 @@ const tasksSlice = createSlice({
             const index = tasks.findIndex(({ id }) => id === taskId);
             tasks.splice(index, 1);
         },
+        fetchExampleTasks: () => {},
+        setTasks: (state, {payload: tasks}) => {
+            state.tasks = tasks;
+        },
     },
 });
 
@@ -35,7 +36,9 @@ export const {
     toggleHideDone,
     setAllDone,
     toggleTaskDone,
-    deleteTask
+    deleteTask,
+    fetchExampleTasks,
+    setTasks
 } = tasksSlice.actions;
 
 const selectTasksState = state => state.tasks;
