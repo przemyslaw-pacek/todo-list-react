@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Header = styled.header`
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr auto auto;
     align-items: center;
     background: ${({ theme }) => theme.color.white};
     font-size: 13.3px;
