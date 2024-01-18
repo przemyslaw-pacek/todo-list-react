@@ -1,16 +1,20 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+`;
+
 export const Button = styled.button`
-    font-size: 16px;
+    background: transparent;
     color: ${({ theme }) => theme.color.teal};
-    background: ${({ theme }) => theme.color.white};
     border: none;
-    transition: 0.2s;
+    transition: 0.3s;
     cursor: pointer;
 
     @media(max-width: ${({ theme }) => theme.breakpoint.mobileWidth}px) {
-        margin: 15px auto;
-        display: grid;
+        flex-basis: 100%;
+        margin: 10px;
     }
 
     &:hover {

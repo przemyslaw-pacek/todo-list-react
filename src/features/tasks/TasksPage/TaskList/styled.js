@@ -1,21 +1,19 @@
 import styled, { css } from "styled-components";
 
 export const Tasks = styled.ul`
-    background: ${({ theme }) => theme.color.white};
-    min-height: 60px;
-    padding: 10px;
-    margin: 2.3px 0 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 `;
 
 export const Item = styled.li`
+    border-bottom: 2px solid ${({ theme }) => theme.color.lightGrey};
+    text-decoration: none;
     display: grid;
     grid-template-columns: auto 1fr auto;
     gap: 10px;
     align-items: center;
     padding: 10px;
-    margin: 25px 10px 10px;
-    list-style-type: none;
-    border-bottom: 2px solid ${({ theme }) => theme.color.lightGrey};
 
     ${({ hidden }) => hidden && css`
         display: none;
