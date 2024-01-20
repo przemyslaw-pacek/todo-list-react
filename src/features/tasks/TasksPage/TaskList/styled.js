@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import styled, { css } from "styled-components";
 
 export const Tasks = styled.ul`
@@ -6,9 +7,8 @@ export const Tasks = styled.ul`
     margin: 0;
 `;
 
-export const Item = styled.li`
+export const Item = styled.li` 
     border-bottom: 2px solid ${({ theme }) => theme.color.lightGrey};
-    text-decoration: none;
     display: grid;
     grid-template-columns: auto 1fr auto;
     gap: 10px;
@@ -20,10 +20,17 @@ export const Item = styled.li`
     `}
 `;
 
-export const Content = styled.span`
+export const ContentNavLink = styled(NavLink)`
+    color: ${({ theme }) => theme.color.teal};
+    text-decoration: none;
+
     ${({ done }) => done && css`
         text-decoration: line-through;
     `}
+  
+    &:hover {
+        color: ${({ theme }) => theme.color.hoverTeal};
+    }
 `;
 
 export const Button = styled.button`
