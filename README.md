@@ -20,10 +20,13 @@ If you want to use it, click [here](https://doncochino.github.io/todos-list-reac
 - BEM
 - MediaQueries
 - Normalize
+- Flex
+- Grid
 - React
 - Styled-components
 - Custom hooks
-- Redux
+- Redux-Saga
+- Redux-Router
 
 How to use:
 
