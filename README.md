@@ -1,6 +1,6 @@
 # Task list
 
-![image](public/animation.gif)
+![image](/src/images/animation.gif)
 
 ## Description:
 
