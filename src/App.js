@@ -2,33 +2,26 @@ import { Switch, Route, HashRouter, Redirect } from "react-router-dom/cjs/react-
 import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
 import AuthorPage from "./features/author/AuthorPage";
-import { List, StyledNavLink } from "./styled";
+import Navigation from "./Navigtion";
+import { toTask, toTasks, toAuthor } from "./routes";
 
 export default () => (
   <HashRouter basename="/todos-list-react">
-    <nav>
-      <List>
-        <li>
-          <StyledNavLink to="/zadania">Zadania</StyledNavLink>
-        </li>
-        <li>
-          <StyledNavLink to="/autor">O autorze</StyledNavLink>
-        </li>
-      </List>
-      <Switch>
-        <Route path="/zadania/:id">
-          <TaskPage />
-        </Route>
-        <Route path="/zadania">
-          <TasksPage />
-        </Route>
-        <Route path="/autor">
-          <AuthorPage />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="zadania" />
-        </Route>
-      </Switch>
-    </nav>
+    <Navigation />
+
+    <Switch>
+      <Route path={toTask()}>
+        <TaskPage />
+      </Route>
+      <Route path={toTasks()}>
+        <TasksPage />
+      </Route>
+      <Route path={toAuthor()}>
+        <AuthorPage />
+      </Route>
+      <Route exact path="/">
+        <Redirect to={toTasks()} />
+      </Route>
+    </Switch>
   </HashRouter>
 );
