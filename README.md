@@ -23,10 +23,11 @@ If you want to use it, click [here](https://doncochino.github.io/todos-list-reac
 - Flex
 - Grid
 - React
-- Styled-components
-- Custom hooks
+- Styled-Components
+- Custom Hooks
+- Redux Toolkit
+- Redux Router
 - Redux-Saga
-- Redux-Router
 
 How to use:
 
