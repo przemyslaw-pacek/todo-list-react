@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
-import { Button, Wrapper } from "./styled.js";
+import { Wrapper } from "./styled.js";
+import Button from "../Button"
 import {
   toggleHideDone,
   setAllDone,
