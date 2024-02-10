@@ -25,5 +25,6 @@ export const Title = styled.h2`
 `;
 
 export const Body = styled.div`
+    text-align: justify;
     padding: 20px;
 `;
