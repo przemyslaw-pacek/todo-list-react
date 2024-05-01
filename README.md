@@ -11,7 +11,7 @@ The "Task List" program is a simple application that allows you to create lists.
 4. If you want to mark all your tasks as done, click the button "Ukończ wszystkie".
 5. Hide or show done tasks with the button "Ukryj/Pokaż ukończone".
 
-If you want to use it, click [here](https://doncochino.github.io/todos-list-react/).
+If you want to use it, click [here](https://przemyslaw-pacek.github.io/todos-list-react/).
 
 ## Technologies:
 - HTML
