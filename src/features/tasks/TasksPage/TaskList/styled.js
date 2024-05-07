@@ -24,7 +24,7 @@ export const ContentNavLink = styled(NavLink)`
     color: ${({ theme }) => theme.color.teal};
     text-decoration: none;
 
-    ${({ done }) => done && css`
+    ${({ $done }) => $done && css`
         text-decoration: line-through;
     `}
   
@@ -41,7 +41,7 @@ export const Button = styled.button`
     transition: 0.3s;
     cursor: pointer;
 
-    ${({ toggleDone }) => toggleDone && css`
+    ${({ $toggleDone }) => $toggleDone && css`
         background: ${({ theme }) => theme.color.green};
     `}
 

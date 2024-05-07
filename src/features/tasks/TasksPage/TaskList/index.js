@@ -20,12 +20,12 @@ const TaskList = () => {
           hidden={task.done && hideDone}
         >
           <Button
-            toggleDone
+            $toggleDone
             onClick={() => dispatch(toggleTaskDone(task.id))}
           >
             {task.done ? "✔" : ""}
           </Button>
-          <ContentNavLink done={task.done} to={toTask({id: task.id})}>
+          <ContentNavLink $done={task.done} to={toTask({id: task.id})}>
             {task.content}
           </ContentNavLink>
           <Button
