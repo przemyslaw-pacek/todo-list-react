@@ -6,7 +6,7 @@ import Navigation from "./Navigtion";
 import { toTask, toTasks, toAuthor } from "./routes";
 
 export default () => (
-  <HashRouter basename="/todos-list-react">
+  <HashRouter basename="/todo-list-react">
     <Navigation />
 
     <Switch>
