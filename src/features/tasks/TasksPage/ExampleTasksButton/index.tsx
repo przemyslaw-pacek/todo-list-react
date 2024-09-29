@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from "../../../../hooks";
 
 const ExampleTasksButton = () => {
   const dispatch = useAppDispatch();
-  const loading = useAppSelector((state) => state.tasks.status === "loading");
+  const loading = useAppSelector(({ tasks }) => tasks.status === "loading");
 
   return (
     <Button onClick={() => dispatch(fetchExampleTasks())} disabled={loading}>
