@@ -5,6 +5,7 @@
 ## Description:
 
 The "Task List" program is a simple application that allows you to create lists.
+
 1. Write a new task and click the blue-green button "Dodaj zadanie".
 2. If the task was done, mark the green button on the left.
 3. Delete the task by red button.
@@ -14,20 +15,20 @@ The "Task List" program is a simple application that allows you to create lists.
 If you want to use it, click [here](https://przemyslaw-pacek.github.io/todo-list-react/).
 
 ## Technologies:
+
 - HTML
 - CSS
 - JavaScript
-- BEM
 - MediaQueries
 - Normalize
 - Flex
 - Grid
 - React
-- Styled-Components
+- Styled Components
 - Custom Hooks
-- Redux Toolkit
 - Redux Router
-- Redux-Saga
+- Redux Saga
+- Typescript
 
 How to use:
 
