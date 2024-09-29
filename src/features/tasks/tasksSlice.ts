@@ -22,8 +22,8 @@ const tasksSlice = createSlice({
     addTask: ({ tasks }, action: PayloadAction<Task>) => {
       tasks.push(action.payload);
     },
-    toggleHideDone: ({ hideDone }) => {
-      hideDone = !hideDone;
+    toggleHideDone: (state) => {
+      state.hideDone = !state.hideDone;
     },
     setAllDone: ({ tasks }) => {
       tasks.map((task) => (task.done = true));
@@ -36,18 +36,15 @@ const tasksSlice = createSlice({
       const index = tasks.findIndex(({ id }) => id === action.payload);
       tasks.splice(index, 1);
     },
-    fetchExampleTasks: ({ status }) => {
-      status = "loading";
+    fetchExampleTasks: (state) => {
+      state.status = "loading";
     },
-    fetchExampleTasksSuccess: (
-      { status, tasks },
-      action: PayloadAction<Task[]>
-    ) => {
-      status = "success";
-      tasks = action.payload;
+    fetchExampleTasksSuccess: (state, action: PayloadAction<Task[]>) => {
+      state.status = "success";
+      state.tasks = action.payload;
     },
-    fetchExampleTasksError: ({ status }) => {
-      status = "error";
+    fetchExampleTasksError: (state) => {
+      state.status = "error";
     },
   },
 });
