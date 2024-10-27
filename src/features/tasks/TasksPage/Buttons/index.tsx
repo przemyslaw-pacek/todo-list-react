@@ -1,5 +1,5 @@
 import { Wrapper } from "./styled";
-import Button from "../Button/index";
+import Button from "../Button";
 import {
   toggleHideDone,
   setAllDone,

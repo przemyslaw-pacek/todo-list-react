@@ -2,7 +2,7 @@ import { useState, useRef, FormEventHandler } from "react";
 import { nanoid } from "@reduxjs/toolkit";
 import { FormField, Button } from "./styled";
 import { addTask } from "../../tasksSlice";
-import Input from "../../Input/index";
+import Input from "../../Input";
 import { useAppDispatch } from "../../../../hooks";
 
 const Form = () => {
