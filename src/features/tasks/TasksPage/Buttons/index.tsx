@@ -7,7 +7,7 @@ import {
   selectEveryTaskDone,
   selectHideDone,
 } from "../../tasksSlice";
-import { useAppDispatch, useAppSelector } from "../../../../hooks";
+import { useAppDispatch, useAppSelector } from "../../../../core/hooks";
 
 const Buttons = () => {
   const tasksEmpty = useAppSelector(selectTasksEmpty);

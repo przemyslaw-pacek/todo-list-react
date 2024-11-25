@@ -3,7 +3,7 @@ import Container from "../../../common/Container";
 import Header from "../../../common/Header";
 import Section from "../../../common/Section";
 import { getTaskById } from "../tasksSlice";
-import { useAppSelector } from "../../../hooks";
+import { useAppSelector } from "../../../core/hooks";
 
 function TaskPage() {
   const { id } = useParams();

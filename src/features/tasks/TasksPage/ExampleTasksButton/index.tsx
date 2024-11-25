@@ -1,6 +1,6 @@
 import Button from "../Button";
 import { fetchExampleTasks } from "../../tasksSlice";
-import { useAppDispatch, useAppSelector } from "../../../../hooks";
+import { useAppDispatch, useAppSelector } from "../../../../core/hooks";
 
 const ExampleTasksButton = () => {
   const dispatch = useAppDispatch();

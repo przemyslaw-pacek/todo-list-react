@@ -7,8 +7,8 @@ import {
 } from "../../tasksSlice";
 import searchQueryParamName from "../searchQueryParamName";
 import { useQueryParameter } from "../queryParameters";
-import { toTask } from "../../../../routes";
-import { useAppDispatch, useAppSelector } from "../../../../hooks";
+import { toTask } from "../../../../core/routes";
+import { useAppDispatch, useAppSelector } from "../../../../core/hooks";
 
 const TaskList = () => {
   const query = useQueryParameter(searchQueryParamName);

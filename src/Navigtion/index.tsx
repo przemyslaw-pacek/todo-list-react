@@ -1,4 +1,4 @@
-import { toAuthor, toTasks } from "../routes";
+import { toAuthor, toTasks } from "../core/routes";
 import { List, StyledNavLink } from "./styled";
 
 export default () => {

@@ -4,10 +4,10 @@ import {
   HashRouter,
   Redirect,
 } from "react-router-dom/cjs/react-router-dom.min";
-import TasksPage from "./features/tasks/TasksPage";
-import TaskPage from "./features/tasks/TaskPage";
-import AuthorPage from "./features/author/AuthorPage";
-import Navigation from "./Navigtion";
+import TasksPage from "../features/tasks/TasksPage";
+import TaskPage from "../features/tasks/TaskPage";
+import AuthorPage from "../features/author/AuthorPage";
+import Navigation from "../Navigtion";
 import { toTask, toTasks, toAuthor } from "./routes";
 
 export default () => (
