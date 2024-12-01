@@ -13,7 +13,6 @@ const Buttons = () => {
   const tasksEmpty = useAppSelector(selectTasksEmpty);
   const everyTaskDone = useAppSelector(selectEveryTaskDone);
   const hideDone = useAppSelector(selectHideDone);
-
   const dispatch = useAppDispatch();
 
   return (
