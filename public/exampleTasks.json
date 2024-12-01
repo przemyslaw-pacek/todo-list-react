@@ -1,12 +1,12 @@
 [
-    {
-        "content": "Oznaczyć to zadanie jako ukończone",
-        "done": false,
-        "id": "lv-vEU-f2rK60_XK0WGaD"
-    },
-    {
-        "content": "Ukończyć wszystkie zadania",
-        "done": true,
-        "id": "tZkFHzm1afj0GyzIa1lpl"
-    }
+  {
+    "content": "Oznaczyć to zadanie jako ukończone",
+    "done": false,
+    "id": "lv-vEU-f2rK60_XK0WGaD"
+  },
+  {
+    "content": "Ukończyć wszystkie zadania",
+    "done": true,
+    "id": "tZkFHzm1afj0GyzIa1lpl"
+  }
 ]
