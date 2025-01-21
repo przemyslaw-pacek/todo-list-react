@@ -6,7 +6,7 @@ import { getTaskById } from "../tasksSlice";
 import { useAppSelector } from "../../../core/hooks";
 
 function TaskPage() {
-  const { id } = useParams();
+  const { id } = useParams<{ id: string }>();
   const task = useAppSelector((state) => getTaskById(state, id));
 
   return (

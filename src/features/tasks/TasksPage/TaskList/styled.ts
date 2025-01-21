@@ -22,7 +22,9 @@ export const Item = styled.li`
     `}
 `;
 
-export const ContentNavLink = styled(NavLink)`
+export const ContentNavLink = styled(NavLink)<{
+  $done?: boolean;
+}>`
   color: ${({ theme }) => theme.color.teal};
   text-decoration: none;
 
